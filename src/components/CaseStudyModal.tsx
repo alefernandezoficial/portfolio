@@ -71,6 +71,12 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
             src={project.image}
             alt={project.name}
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src.includes('/images/')) {
+                target.src = target.src.replace('/images/', '/assets/images/');
+              }
+            }}
             className="w-full h-full object-cover"
           />
         </div>

@@ -17,7 +17,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
           <img
             src={project.image}
             alt={project.name}
+            loading="lazy"
             referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src.includes('/images/')) {
+                target.src = target.src.replace('/images/', '/assets/images/');
+              }
+            }}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute top-3 right-3">
