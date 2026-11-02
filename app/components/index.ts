@@ -1,0 +1,15 @@
+export { Header } from '../../src/components/Header.tsx';
+export { Hero } from '../../src/components/Hero.tsx';
+export { AIWorkflow } from '../../src/components/AIWorkflow.tsx';
+export { TechStack } from '../../src/components/TechStack.tsx';
+export { ProjectCard } from '../../src/components/ProjectCard.tsx';
+export { Projects } from '../../src/components/Projects.tsx';
+export { CaseStudyModal } from '../../src/components/CaseStudyModal.tsx';
+export { Experience } from '../../src/components/Experience.tsx';
+export { Certifications } from '../../src/components/Certifications.tsx';
+export { PdfViewerModal } from '../../src/components/PdfViewerModal.tsx';
+export { Contact } from '../../src/components/Contact.tsx';
+export { AboutAndInterests } from '../../src/components/AboutAndInterests.tsx';
+export { BeyondCode } from '../../src/components/BeyondCode.tsx';
+export { Footer } from '../../src/components/Footer.tsx';
+export { ResumeModal } from '../../src/components/ResumeModal.tsx';
